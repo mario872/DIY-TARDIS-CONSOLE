@@ -1,5 +1,5 @@
 # DIY-TARDIS-CONSOLE
-How to I made my own TARDIS console from Doctor Who.
+Sorry, check back later when the project is at a more stable point.
 
 ## About
 
