@@ -1,0 +1,11 @@
+import threading
+import subprocess
+
+TARDISthread =threading.Thread(target=subprocess.run, args=(["python3", "TARDIS.py"],))
+HandlesThread =threading.Thread(target=subprocess.run, args=(["python3", "/home/pi/TARDIS/handles/assistant-sdk-python/google-assistant-sdk/googlesamples/assistant/grpc/pushtotalk.py", "--audio-block-size=4096"],))
+
+HandlesThread.start()
+TARDISthread.start()
+
+HandlesThread.join()
+TARDISthread.join()
